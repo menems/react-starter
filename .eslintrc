@@ -1,0 +1,17 @@
+{
+    "extends": "airbnb",
+    "rules": {
+        "indent": [2, 4, {"SwitchCase": 1}],
+        "react/jsx-indent": [2, 4, {"SwitchCase": 1}],
+        "comma-dangle": 0,
+        "curly": [2, "multi", "consistent"],
+        "consistent-return": 0,
+        "max-len": [2, 120],
+        "no-underscore-dangle": 0,
+        "no-param-reassign": 0,
+        "no-shadow": 0,
+        "no-use-before-define": 0,
+        'new-cap': 0,
+        "no-console": 2
+    }
+}
