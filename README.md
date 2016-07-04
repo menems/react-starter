@@ -3,7 +3,7 @@
 ## Features
 
 - [Webpack](https://webpack.github.io/docs/), [webpack dev server](https://webpack.github.io/docs/webpack-dev-server.html)
-- [Babel](https://babeljs.io/), [ES2015 preset](https://babeljs.io/docs/plugins/preset-es2015/), [React preset](http://babeljs.io/docs/plugins/preset-react/)
+- [Babel](https://babeljs.io/), [ES2015 preset](https://babeljs.io/docs/plugins/preset-es2015/), [React preset](http://babeljs.io/docs/plugins/preset-react/), [Stage 1 preset](http://babeljs.io/docs/plugins/preset-stage-2/)
 - [React](https://facebook.github.io/react/)
 - [Eslint](http://eslint.org/)
 

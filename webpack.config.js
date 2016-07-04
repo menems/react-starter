@@ -13,7 +13,7 @@ const withBuild = module => (isBuild ? module : null);
 module.exports = {
     context: path.join(__dirname, './src'),
     entry: {
-        app: './index.js'
+        app: './index.jsx'
     },
     output: {
         publicPath: '/',
