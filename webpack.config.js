@@ -44,13 +44,38 @@ module.exports = {
         new webpack.DefinePlugin({
             'process.env': { NODE_ENV: JSON.stringify(env) },
         }),
-        new HtmlWebpackPlugin({ template: 'index.html', inject: 'body' }),
+        new HtmlWebpackPlugin({
+            template: 'index.html',
+            inject: 'body',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true,
+                removeRedundantAttributes: true,
+                useShortDoctype: true,
+                removeEmptyAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                keepClosingSlash: true,
+                minifyJS: true,
+                minifyCSS: true,
+                minifyURLs: true
+            }
+        }),
         withBuild(new webpack.optimize.OccurenceOrderPlugin()),
         withBuild(new webpack.NoErrorsPlugin()),
         withBuild(new webpack.optimize.DedupePlugin()),
         withBuild(new webpack.optimize.UglifyJsPlugin({
             minimize: true,
-            compress: { warnings: false }
+            compress: {
+                screw_ie8: true,
+                warnings: false
+            },
+            mangle: {
+                screw_ie8: true,
+            },
+            output: {
+                screw_ie8: true,
+                comments: false
+            }
         }))
     ])
 };
